@@ -1,0 +1,27 @@
+This assignment is worth 25% of your final grade. You must work on this assignment entirely alone. You may not work with anyone else (except for me or the TA) to complete the assignment. You may seek general help on the installation and use of anaconda, python 3, or opencv 3.4 from anyone you like as long as you do not show them, or discuss, the script you are writing for this assignment. You may also use any on line tutorials you like for assistance or any of the opencv python sample scripts that I've included in the code section of our brightspace pages. If you do use on line tutorials, any external references of any kind, or code from the sample programs, you must cite them in your report. If not you will be in violation of the honor code. You need not cite the program that I've uploaded for you to modify.
+
+For this assignment, you are to set up a working anaconda, python 3, OpenCV 3.4, environment. I recommend that you also setup PyCharm for use as an interactive development environment, but that is not a requirement.
+
+Modify program testcv_mt_vid.py to run the OpenCV operators of your choice, with the following exception: You must include the opencv 
+
+1. "sepFilter2D()" with a Gaussian Kernel that you generate using "getGaussianKernel()". (Note that you can get the same results using the module called "GaussianBlur()". But I want you to use "sepFilter2D" with a Gaussian Kernel so that you learn how to apply an arbitrary separable filter to an image.)
+
+In addition to the Gaussian filter, choose 
+
+
+2. two more image processing modules of your choice to include in your program. See https://docs.opencv.org/3.4.4/d7/dbd/group__imgproc.html for a complete list of these with their specifications. 
+
+3. Set all three up in teh script file so that they can be turned on or off in real time by hitting a specific key when your cursor is in the video window.
+
+In the latest version of opencv_test.zip, there is a python script called "testcv_mt_vid.py". I want you to modify that script since it will generate a video file called "vid_out.avi". When the program is running and you are seeing video in the window labeled "video", if you move your cursor into the window and hit the "v" key the program will start writing the frames you are seeing to the file. "If you type "v" again, it will stop. You can start and stop the frame writing as often as you like. When you quit the program by hitting the "Esc" key (with your cursor in the video window), the file "vid_out.avi" will be written. You should be able to view it then using any video player.
+
+After you get the three (or more, if you wish) IP modules working, start "testcv_mt_vid.py" with a video camera pointed at yourself.
+Generate a video that for a second or two each, shows(1) raw (unprocessed) frames, (2) raw frames with added Canny edges, (3) Canny edges alone, (4) raw frames without the canny edges, (5) Gaussian blurring, (6) your first choice of IP operator, and (7) your second choice of IP operator. (8) add more if you like, but that is not required. Note that (1) - (4) are already in the program.(5) through (7) are your additions. 
+
+Additional task for graduate students: include code that lets you draw a rectangle in the window and then restricts the image processing to the interior of that rectangle. You may use online tutorials and the opencv sample programs to learn how.
+
+After you generate your video, please change its name to "[your name]_EECEn354_S2019_Assignment_1.avi" where you should replace "[your name]" with your name (duh) and the "n" in "EECEn354" with a 4 if you are an undergraduate and 5 if you are a graduate student. Upload it to brightspace in the Assignment 1 page. Write a very short report (~1 page) indicating exactly what you did. That report should be nicely formatted with your name, the course number, and the assignment number, and the date you completed it. The report should be a pdf file with name, "[your name]_EECEn354_S2019_Assignment_1.pdf". Also upload your python code. Put your name, the course number, assignment number, and date as comments in the first 4 lines of the file.
+
+Please note that points will be taken off of your score if you do not follow the simple instructions above.
+
+Also the assignment is due no later than Sunday at 23:59. Points will be taken off for late assignments, prorated in such a way that you will lose 10 points for every 24 hours that it is late. 
