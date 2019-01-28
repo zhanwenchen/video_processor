@@ -54,7 +54,6 @@ BRIGHTNESS_SLIDER_MAX = 255
 GAMMA_SLIDER_MAX = 255
 THRESHOLD_SLIDER_MAX = 255
 WINDOW_NAME = 'VideoProcessor' # The name on top of the video player GUI
-TIMEOUT = 100 # For creating the video capture object
 # By default, use the 0th camera (e.g. on a laptop, it's the integrated webcam).
 # NOTE that when your laptop connects to a monitor with its own integrated
 # webcam, the external monitor's camera is now incremented to (probably 1)
